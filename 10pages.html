@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ELITE EXPEDITIONS</title>
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Professional Styling */
+    .navbar {
+      background: linear-gradient(135deg, #344feb 0%, #2a3bc7 100%);
+      min-height: 120px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      padding: 0;
+    }
+    
+    .brand-container {
+      padding: 15px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    
+    .navbar-brand {
+      font-size: 2.2rem;
+      font-weight: 800;
+      letter-spacing: 1.8px;
+      text-transform: uppercase;
+      color: white !important;
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    
+    .nav-link {
+      color: rgba(255, 255, 255, 0.92) !important;
+      font-weight: 600;
+      padding: 0.65rem 1.1rem !important;
+      border-radius: 4px;
+      transition: all 0.25s ease;
+      margin: 0 0.25rem;
+    }
+    
+    .nav-link:hover {
+      color: white !important;
+      background: rgba(255, 255, 255, 0.18) !important;
+      transform: translateY(-2px);
+    }
+    
+    .nav-item {
+      margin: 8px 0;
+    }
+    
+    /* Mobile adjustments */
+    @media (max-width: 991px) {
+      .navbar-brand {
+        font-size: 1.8rem;
+      }
+      
+      .nav-link {
+        margin: 0 !important;
+        padding: 0.8rem 1.2rem !important;
+        text-align: center;
+      }
+      
+      .navbar-nav {
+        padding: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container-fluid">
+      <!-- Centered Header -->
+      <div class="brand-container w-100">
+        <h1 class="navbar-brand text-center mb-0">ELITE EXPEDITIONS</h1>
+      </div>
+      
+      <!-- Mobile Toggle -->
+      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <!-- Navigation Items Below Header -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-center flex-wrap">
+          <li class="nav-item">
+            <a class="nav-link" href="About us.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#destinations">Destinations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#tours">Tours & Packages</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#booking">Booking Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#faq">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login.html">Login / Sign Up</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Expeditions | Travel Agency</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #1a73e8;
+            --secondary: #ff6b35;
+            --light: #f8f9fa;
+            --dark: #212529;
+            --accent: #00c853;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: var(--dark);
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        
+        .hero p {
+            font-size: 1.5rem;
+            max-width: 800px;
+            margin: 0 auto 2.5rem;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0d5cb6;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .btn-outline-light {
+            border-color: white;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-outline-light:hover {
+            background-color: white;
+            color: var(--primary);
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        /* Section Styling */
+        .section-title {
+            position: relative;
+            text-align: center;
+            margin-bottom: 3rem;
+            padding-bottom: 1rem;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--secondary);
+            border-radius: 2px;
+        }
+        
+        /* Destinations */
+        .destination-card {
+            border: none;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            height: 100%;
+        }
+        
+        .destination-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .destination-img {
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .destination-card .card-body {
+            padding: 1.5rem;
+        }
+        
+        /* Features */
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+        
+        /* Testimonials */
+        .testimonial-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            position: relative;
+            margin: 1rem;
+        }
+        
+        .testimonial-card::before {
+            content: '"';
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            font-size: 5rem;
+            color: rgba(26, 115, 232, 0.1);
+            font-family: Georgia, serif;
+            line-height: 1;
+        }
+        
+        .testimonial-text {
+            font-style: italic;
+            margin-bottom: 1.5rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--primary);
+        }
+        
+        /* Newsletter */
+        .newsletter {
+            background: linear-gradient(135deg, var(--primary), #0d47a1);
+            padding: 4rem 0;
+            color: white;
+            text-align: center;
+        }
+        
+        .newsletter h2 {
+            margin-bottom: 1.5rem;
+        }
+        
+        .newsletter p {
+            max-width: 600px;
+            margin: 0 auto 2rem;
+            opacity: 0.9;
+        }
+        
+        .form-control {
+            height: 50px;
+            border-radius: 50px;
+            border: none;
+            padding-left: 20px;
+        }
+        
+        .btn-subscribe {
+            background: var(--secondary);
+            border: none;
+            height: 50px;
+            border-radius: 50px;
+            padding: 0 30px;
+            font-weight: 600;
+        }
+        
+        .btn-subscribe:hover {
+            background: #e55a2b;
+        }
+        
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 0 1.5rem;
+        }
+        
+        .footer-title {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+        
+        .footer-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--secondary);
+        }
+        
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.1);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .social-icon:hover {
+            background: var(--secondary);
+            transform: translateY(-3px);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.2rem;
+            }
+            
+            .btn {
+                width: 100%;
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Explore the World, One Adventure at a Time</h1>
+            <p>Discover unforgettable destinations, exciting experiences, and tailor-made trips designed just for you.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button class="btn btn-primary" id="planTripBtn">Plan Your Trip!</button>
+                <button class="btn btn-outline-light" id="exploreBtn">Explore Destinations</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Featured Destinations</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="destination-img" alt="Paris">
+                        <div class="card-body">
+                            <h3>Paris</h3>
+                            <p>Romantic streets, iconic landmarks, and endless charm.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1024&q=80=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="destination-img" alt="Maldives">
+                        <div class="card-body">
+                            <h3>Maldives</h3>
+                            <p>Relax on pristine beaches and enjoy luxury resorts.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="destination-card">
+                        <img src="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" class="destination-img" alt="Japan">
+                        <div class="card-body">
+                            <h3>Japan</h3>
+                            <p>Experience vibrant culture, stunning temples, and breathtaking nature.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Travel With Us -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Why Travel With Us</h2>
+            <div class="row">
+                <div class="col-md-3 mb-4">
+                    <div class="text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Expert Local Guides</h4>
+                        <p>Make your trip unforgettable with knowledgeable local guides.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-tags"></i>
+                        </div>
+                        <h4>Affordable Packages</h4>
+                        <p>Customizable travel packages to fit your budget and preferences.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h4>24/7 Support</h4>
+                        <p>We're here to help you every step of the way, day or night.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <div class="text-center">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <h4>Handpicked Experiences</h4>
+                        <p>Curated experiences for every type of traveler.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Inspiration -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title">Travel Inspiration</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-map-marked-alt text-primary me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h4>Top 10 Hidden Gems Around the World</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-wallet text-primary me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h4>How to Travel on a Budget Without Missing Out</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 border-0 shadow-sm">
+                        <div class="card-body d-flex align-items-center">
+                            <i class="fas fa-mountain text-primary me-3" style="font-size: 2rem;"></i>
+                            <div>
+                                <h4>Must-Visit Destinations for Adventure Seekers</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title">Testimonials</h2>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Thanks to this team, our honeymoon was perfect! Everything was planned to perfection.</p>
+                        <p class="testimonial-author">- Sarah M.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="testimonial-card">
+                        <p class="testimonial-text">Amazing experience! Every destination felt like a dream come true.</p>
+                        <p class="testimonial-author">- John K.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Get Exclusive Travel Deals</h2>
+            <p>Subscribe to our newsletter for travel tips, exclusive deals, and inspiration straight to your inbox.</p>
+            <form class="d-flex justify-content-center gap-2 flex-wrap">
+                <input type="email" class="form-control" placeholder="Enter your email" required>
+                <button type="submit" class="btn btn-subscribe">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h3 class="text-white mb-4">Wanderlust Expeditions</h3>
+                    <p>Creating unforgettable travel experiences since 2010. Our passion is to help you explore the world in the most authentic and meaningful way.</p>
+                    <div class="mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-2 mb-4">
+                    <h5 class="footer-title">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Destinations</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Packages</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">About Us</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Popular Destinations</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-light text-decoration-none">Paris, France</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Bali, Indonesia</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Santorini, Greece</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Kyoto, Japan</a></li>
+                        <li><a href="#" class="text-light text-decoration-none">Machu Picchu, Peru</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 mb-4">
+                    <h5 class="footer-title">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> 123 Travel Street, New York</li>
+                        <li><i class="fas fa-phone me-2"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-envelope me-2"></i> info@wanderlust.com</li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="mt-4 mb-4" style="background: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p>&copy; 2025 Wanderlust Expeditions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Button click handlers
+        document.getElementById('planTripBtn').addEventListener('click', function() {
+            alert('Please you need to login/sign up before you plan your trip!');
+        });
+        
+        document.getElementById('exploreBtn').addEventListener('click', function() {
+            alert('Please you need to login/sign up before you can explore your destination!');
+        });
+        
+        // Form submission for newsletter
+        document.querySelector('.newsletter form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            alert(`Thank you for subscribing with ${email}! You'll receive our travel deals soon.`);
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+
+

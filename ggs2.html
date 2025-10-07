@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Quiz</h1>
+<p id="question"></p>
+<button id="option1"></button>
+<button id="option2"></button>
+<p id="result"></p>
+
+<script>
+var questions =[
+{question:"what is the largest planet in our solar system", options:["earth","jupiter"],
+ answer:1},
+{question:"who wrote the play Romeo and Juliet",
+ options:["Charles Dickens","William Shakespeare"],
+ answer:1},
+{question:"What is the capital city of Japan",
+ options:["Beijing","Tokyo"],
+ answer:1},
+{question:"which gas do humans need to breathe in to survive",
+ options:["Carbon","Oxygen"],
+ answer:1},
+{question:"what is the hardest natural substance on earth",
+ options:["Diamond","Gold"],
+ answer:0},
+{question:"who was the first man to walk on the moon?",
+ options:["Neil Armstong","Yuri Gagarin"],
+ answer:0},
+{question:"What currency is used in the umited kingdom",
+ options:["Pound Sterling","Dollar"],
+ answer:0},
+{question:"How many continent are there in the world",
+ options:["seven","eight"],
+ answer:0},
+{question:"which animal is known as the \"king of the Jungle\"",
+ options:["Lion","Tiger"],
+ answer:0}];
+var currentQuestion = 0;
+
+function showQuestion() {
+			document.getElementById("question").innerHTML = questions[currentQuestion].question;
+			document.getElementById("option1").innerHTML = questions[currentQuestion].options[0];
+			document.getElementById("option2").innerHTML = questions[currentQuestion].options[1];}
+showQuestion();
+
+		document.getElementById("option1").addEventListener("click", checkAnswer);
+		document.getElementById("option2").addEventListener("click", checkAnswer);
+
+
+		function checkAnswer(event) {
+			var answer = event.target.innerHTML;
+			if (questions[currentQuestion].options.indexOf(answer) === questions[currentQuestion].answer) {
+				document.getElementById("result").innerHTML = "Correct!";
+			} else {
+				document.getElementById("result").innerHTML = "Incorrect!";
+			}
+			currentQuestion++;
+			if (currentQuestion < questions.length) {
+				showQuestion();
+			}
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

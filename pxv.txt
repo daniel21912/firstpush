@@ -1,0 +1,26 @@
+<html>
+<head>
+<title> My first html page </title>
+
+<link rel='stylesheet' href='.css'>
+
+</head>
+
+<body> 
+
+<h1 class="sukumar">Hello This is First Line</h1> 
+
+<h1>Hello This is Second Line</h1> 
+
+<h1 class="sukumar">Hello This is Third Line</h1> 
+
+<p class="sukumar"> This is fourth line </p>
+
+<ul>
+<li>  Dell </li>
+<li> HP </li>
+</ul>
+
+
+</body>
+</html>

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glodanif Energy Ltd</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(to bottom, #000000, #006400);
+            color: white;
+            font-family: 'Arial', sans-serif;
+        }
+        .header {
+            background: rgba(0, 100, 0, 0.7);
+            padding: 20px;
+            text-align: center;
+        }
+        .header h1 {
+            color: #ffff00;
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+        .header h2 {
+            color: white;
+            font-size: 1.5rem;
+            margin-top: 0;
+        }
+        .flag-map {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 150px;
+            height: auto;
+        }
+        .product-section {
+            background: #008000;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .product-text {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .product-images {
+            display: flex;
+            gap: 20px;
+        }
+        .product-image {
+            background: white;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .specifications {
+            background: #006400;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .spec-title {
+            background: #ffff00;
+            color: #000000;
+            padding: 5px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .spec-table {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .spec-item {
+            text-align: center;
+            margin: 10px;
+        }
+        .spec-label {
+            font-weight: bold;
+        }
+        .benefits-section {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .benefit-box {
+            background: #008000;
+            padding: 15px;
+            border: 2px dashed white;
+            width: 45%;
+        }
+        .footer {
+            background: #ffff00;
+            color: #000000;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .footer p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <div class="header">
+        <h1>DISCOVER</h1>
+        <h2>NIGERIA’S ENERGY POTENTIAL WITH GLODANIF ENERGY LTD</h2>
+        <img src="https://via.placeholder.com/150x100?text=Nigeria+Flag+Map" alt="Nigeria Flag Map" class="flag-map">
+    </div>
+
+    <!-- Product Section -->
+    <div class="product-section">
+        <div class="product-text">
+            HIGH-QUALITY COAL & CHARCOAL SOLUTIONS
+        </div>
+        <div class="product-images">
+            <div class="product-image">
+                <img src="https://via.placeholder.com/100x100?text=Coal" alt="Coal">
+                <p>COAL</p>
+            </div>
+            <div class="product-image">
+                <img src="https://via.placeholder.com/100x100?text=Charcoal" alt="Charcoal">
+                <p>CHARCOAL</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Specifications Section -->
+    <div class="specifications">
+        <div class="spec-title">COAL: OUR COAL MEETS INDUSTRY STANDARDS WITH:</div>
+        <div class="spec-table">
+            <div class="spec-item">
+                <div class="spec-label">Moisture Content</div>
+                <div>5-15%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Ash Content</div>
+                <div>5-20%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Volatile Matter</div>
+                <div>20-40%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Fixed Carbon</div>
+                <div>40-60%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Sulfur Content</div>
+                <div><1-2%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Calorific Value</div>
+                <div>20-30 MJ/kg</div>
+            </div>
+        </div>
+
+        <div class="spec-title">CHARCOAL: OUR SUSTAINABLE SOURCED CHARCOAL FEATURES:</div>
+        <div class="spec-table">
+            <div class="spec-item">
+                <div class="spec-label">Moisture Content</div>
+                <div><10%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Ash Content</div>
+                <div><5%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Volatile Matter</div>
+                <div>10-30%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Fixed Carbon</div>
+                <div>70-90%</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">Calorific Value</div>
+                <div>25-35 MJ/kg</div>
+            </div>
+            <div class="spec-item">
+                <div class="spec-label">pH</div>
+                <div>6-8</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Benefits and Uses Section -->
+    <div class="benefits-section">
+        <div class="benefit-box">
+            <strong>IDEAL FOR:</strong>
+            <ul>
+                <li>INDUSTRIAL USE (Power Generation, Cement Production)</li>
+                <li>DOMESTIC USE (Cooking, Heating)</li>
+                <li>METALLURGICAL USE (Steel Production)</li>
+            </ul>
+        </div>
+        <div class="benefit-box">
+            <strong>BENEFITS:</strong>
+            <ul>
+                <li>Competitive Pricing</li>
+                <li>Consistent Quality</li>
+                <li>Reliable Supply</li>
+                <li>Environmentally Friendly</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>Partner with us for a brighter energy future</p>
+        <p><strong>Contact Us:</strong> Glodanif Energy Ltd,</p>
+        <p>3B, Ben Blue Street, Blue Roof Estate, Amikanle, Alagbado, Lagos.</p>
+        <p>Email: glodaniff1970@gmail.com | Tel: 234-8030639373</p>
+    </div>
+
+    <!-- Bootstrap JS (optional for interactivity) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1 id="quote"></h1>
+<button id="generate-quote">Generate quotes</button>
+
+<script>
+   var quotes =[
+    "The future belongs to those who believe in the beauty of their dreams— Eleanor Roosevelt",
+    "Don't watch the clock; do what it does. Keep going — Sam Levenson",
+    "Your life does not get better by chance, it gets better by change— Jim Rohn",
+    "Success is not final, failure is not fatal: it is the courage to continue that counts— Winston Churchill",
+    "What’s meant for you will never miss you, and what misses you was never meant for you— Unknown",
+    "Sometimes you win, sometimes you learn— John C. Maxwell",
+    "Never let the fear of striking out keep you from playing the game — Babe Ruth",
+    "You were born to stand out, not to fit in— Dr. Seuss",
+    "Tough times don’t last, but tough peopledo— Robert H.Schuller",
+    "Your mindset is the difference between winning and losing— Unknown"
+              ];
+document.getElementById("generate-quote").addEventListener("click", function() {
+			var randomQuote = quotes[Math.floor(Math.random()* quotes.length)];
+			document.getElementById("quote").innerHTML = randomQuote;
+		});
+	</script>
+</body>
+</html>

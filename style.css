@@ -1,0 +1,11 @@
+/* Small, tasteful tweaks */
+body {
+  min-height: 100vh;
+}
+
+.card .list-group-item span:last-child {
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

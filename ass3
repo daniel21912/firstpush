@@ -1,0 +1,18 @@
+username - ogunmekpon
+
+password - ogunmekpon21
+
+I should get ouput as  Valid User
+
+otherwise   -----------  invalid User
+
+----------------------
+
+
+a = input ( 'Enter Username: ')
+b = input ( 'Enter Password: ' )
+
+if a == 'sunil'  and b == 'logiclabs':
+	print ( 'Valid User')
+else:
+	print ( 'Invalid User' )

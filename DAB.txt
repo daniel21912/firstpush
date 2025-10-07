@@ -1,0 +1,64 @@
+<head><H1>WELCOME TO OUR</H1>
+<h2>name,place,animal,food/fruit,thing</h2></head>
+<BODY><TABLE>
+<style>table,th,td{border :2px solid black;}
+th,td{background-color:#96D4D4}
+</style>
+<table style="width:100%">
+<tr style="height:100px">
+<TR><th>name</th>
+<th>place</th>
+<th>animal</th>
+<th>food/fruit</th>
+<th>thing</th></tr>
+<tr><td>Daniel </td>
+<td>Dubai </td>
+<td>doughnut</td>
+<td>dog</td>
+<td>door</td></tr>
+<tr><td>praise</td>
+<td>porugal</td>
+<td>parrot </td>
+<td>pie</td>
+<TD>padlock</td> 
+<tr><td>bola</td>
+<td>belgium</td>
+<td>bat</td>
+<td>beans</td>
+<td>belt</td></tr>
+<tr><td>seun</td>
+<td>saudi arabi</td>
+<td>snake</td>
+<td>sandwhich</td>
+<td>soap</td></tr>
+<tr><td>ana</td>
+<td>africa</td>
+<td>antelope</td>
+<td>apple</td>
+<td>airplane</td></tr>
+<tr><td>rahman</td>
+<td>rivers state</td>
+<td>rat</td>
+<td>rice</td>
+<td>razor</td></tr>
+<tr><td>collins</Td>
+<td>canada</td>
+<td>corn</td>
+<td>cat</td>
+<td>cap</td></tr>
+<tr><td>mobolaji</td>
+<td>Madagascar</td>
+<td>monkey</td>
+<TD>mango</TD>
+<td>map</td></tr>
+<tr><td>nifemi</td>
+<td>niger</td>
+<td>numbat</td>
+<td>nut</td>
+<td>nail</td></tr>
+<tr><td>temi</td>
+<td>turkey</td>
+<td>turkey</td>
+<td>turkey</td>
+<td>tap</td></tr></BODY>
+

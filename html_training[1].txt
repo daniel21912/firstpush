@@ -1,0 +1,2174 @@
+What is HTML?
+HTML stands for Hyper Text Markup Language
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+HTML consists of a series of elements
+HTML elements tell the browser how to display the content
+HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+A Simple HTML Document
+
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+</html>
+
+
+Learn HTML Using Notepad or TextEdit
+Web pages can be created and modified by using professional HTML editors.
+
+However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+
+We believe that using a simple text editor is a good way to learn HTML.
+
+Follow the steps below to create your first web page with Notepad or TextEdit.
+
+The <!DOCTYPE> Declaration
+The <!DOCTYPE> declaration represents the document type, and helps browsers to display web pages correctly.
+
+It must only appear once, at the top of the page (before any HTML tags).
+
+The <!DOCTYPE> declaration is not case sensitive.
+
+The <!DOCTYPE> declaration for HTML5 is:
+
+
+HTML Headings
+
+
+HTML headings are defined with the <h1> to <h6> tags.
+
+<h1> defines the most important heading. <h6> defines the least important heading: 
+
+
+<h1>This is heading 1</h1>
+<h2>This is heading 2</h2>
+<h3>This is heading 3</h3>
+
+
+
+
+HTML Paragraphs
+HTML paragraphs are defined with the <p> tag:
+
+Example 
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+
+
+HTML Links
+HTML links are defined with the <a> tag:
+
+e.g
+
+<a href="https://www.infolabng.com">This is a link</a>
+
+
+
+
+HTML Images
+
+HTML images are defined with the <img> tag.
+
+The source file (src), alternative text (alt), width, and height are provided as attributes:
+
+<img src="w3schools.jpg"  width="104" height="142">
+
+
+
+
+Practical Example of a html page showing Document type , Heading ,paragraph and HTML image<!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Images</h2>
+<p>HTML images are defined with the img tag:</p>
+
+<img src="w3schools.jpg" alt="W3Schools.com" width="150" height="142">
+
+
+
+<p>This is a <br> paragraph with a line break.</p>
+
+</body>
+</html>
+
+
+
+Empty HTML Elements
+HTML elements with no content are called empty elements.
+
+<p>This is a <br> paragraph with a line break.</p>
+
+
+
+
+
+
+
+
+Tag	                      Description
+<html>            	Defines the root of an HTML document
+<body>           	Defines the document's body
+<h1> to <h6>	        Defines HTML headings
+
+The <br> tag defines a line break, and is an empty element without a closing tag:
+
+
+Table 
+
+HTML tables allow web developers to arrange data into rows and columns.
+
+A table in HTML consists of table cells inside rows and columns.
+
+
+Allow web developers to arrange data into rows and columns.
+
+<table> to create table
+<thead> to specify head row
+<th> to specify column data in head row(column name)
+
+<tr> to insert row in the table
+<td> to specify column data in the row/record
+
+
+Eg:
+----------
+
+ <table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Nigerite</td>
+    <td>Dr Idris</td>
+    <td>Nigeria</td>
+  </tr>
+  <tr>
+    <td>Infolab</td>
+    <td>Mr Abdullahi</td>
+    <td>Mexico</td>
+  </tr>
+ 
+    <tr>
+     <td> LEXIFY</td>
+      <td> Mr Daniel</td>
+     <td> United Kingdom</td>
+  </tr>
+</table>
+
+
+
+Example
+
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Saudi Arabia</td>
+    <td>China</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+
+
+
+              Table Cells
+Each table cell is defined by a <td> and a </td> tag.
+
+td stands for table data.
+
+Everything between <td> and </td> is the content of a table cell.
+
+Example
+<table>
+  <tr>
+    <td>Emil</td>
+    <td>Tobias</td>
+    <td>Linus</td>
+  </tr>
+</table>
+
+
+
+HTML tables can have borders of different styles and shapes.
+
+How To Add a Border
+To add a border, use the CSS border property on table, th, and td elements:
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+                           Collapsed Table Borders
+To avoid having double borders like in the example above, set the CSS border-collapse property to collapse.
+
+This will make the borders collapse into a single border:
+
+
+Example
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+
+
+                             Style Table Borders
+If you set a background color of each cell, and give the border a white color (the same as the document background), 
+you get the impression of an invisible border:
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+
+TABLE SIZE
+
+HTML tables can have different sizes for each column, row or the entire table.
+
+
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+</style>
+
+<body>
+
+<h2>100% wide HTML Table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th> 
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Doe</td>
+    <td>80</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+................................
+
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+
+
+............................
+Set the height of the second row to 200 pixels:
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Uthman</td>
+    <td>Muhammad</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Mariam</td>
+    <td>Sulaiman</td>
+    <td>50</td>
+  </tr>
+   <tr>
+    <td>Zainab</td>
+    <td>Odunlami</td>
+    <td>50</td>
+  </tr>
+
+
+
+</table>
+
+
+
+
+
+
+
+
+---------------------------
+
+HTML Table Headers
+Table headers are defined with th elements. Each th element represents a table cell.
+
+Example
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+                        
+
+                                   Vertical Table Headers
+To use the first column as table headers, define the first cell in each row as a <th> element:
+
+Example
+<table>
+  <tr>
+    <th>Firstname</th>
+    <td>Jill</td>
+    <td>Eve</td>
+  </tr>
+  <tr>
+    <th>Lastname</th>
+    <td>Smith</td>
+    <td>Jackson</td>
+  </tr>
+  <tr>
+    <th>Age</th>
+    <td>94</td>
+    <td>50</td>
+  </tr>
+</table>
+
+
+                                    HTML STYLE AND COLOR
+
+The HTML style attribute is used to add styles to an element, such as color, font, size, and more.
+
+                          BACKGROUND COLOR
+e.g 
+Example 1
+Set the background color for a page to powderblue:
+
+<body style="background-color:powderblue;">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body
+
+                         SET COLORS FOR ELEMENTS
+
+Example 2
+
+                        Set background color for two different elements:
+
+<body>
+
+<h1 style="background-color:powderblue;">This is a heading</h1>
+<p style="background-color:tomato;">This is a paragraph.</p>
+
+
+
+
+                                   TEXT COLORS
+The CSS color property defines the text color for an HTML element:
+
+Example
+<h1 style="color:blue;">This is a heading</h1>
+<p style="color:red;">This is a paragraph.</p>
+
+
+                                         FONTS
+The CSS font-family property defines the font to be used for an HTML element:
+
+Example
+<h1 style="font-family:verdana;">This is a heading</h1>
+<p style="font-family:courier;">This is a paragraph.</p
+
+
+                                     TEXT SIZE
+The CSS font-size property defines the text size for an HTML element:
+
+Example
+<h1 style="font-size:300%;">This is a heading</h1>
+<p style="font-size:160%;">This is a paragraph.</p>
+
+
+                                      TEXT ALIGNMENT
+The CSS text-align property defines the horizontal text alignment for an HTML element:
+
+Example
+<h1 style="text-align:right;">Centered Heading</h1>
+<p style="text-align:center;">Centered paragraph.</p>
+
+
+                                  Chapter Summary
+Use the style attribute for styling HTML elements
+Use background-color for background color
+Use color for text colors
+Use font-family for text fonts
+Use font-size for text sizes
+Use text-align for text alignment
+
+
+
+                                                  DIV TAG
+
+
+The <div> element is by default a block element, meaning that it takes all available width, and comes with line breaks before and after.
+
+e.g
+
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+</div>
+
+Example 
+
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  background-color: #FFF4A3;
+}
+</style>
+<body>
+
+<h1>HTML DIV Example</h1>
+
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+</div>
+
+<p>The yellow background is added to demonstrate the footprint of the DIV element.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+                          Center align a <div> element
+If you have a <div> element that is not 100% wide, and you want to center-align it,
+ set the CSS margin property to auto.
+
+example
+<style>
+div {
+  width:300px;
+  margin:auto;
+}
+</style>
+
+.....................................................................................................
+                                        Multiple <div> elements
+                         You can have many <div> containers on the same page.
+
+<div>
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+</div>
+
+<div>
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 700,000 inhabitants.</p>
+</div>
+
+<div>
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has over 4 million inhabitants.</p>
+</div>
+
+
+
+
+
+
+
+............................................................................................................
+
+                            Aligning <div> elements side by side
+When building web pages, you often want to have two or more <div> elements side by side, like this:
+
+
+
+1. Inline block
+
+<style>
+div {
+  width: 30%;
+  display: inline-block;
+}
+</style>
+
+EXAMPLE (INLINE BLOCK)
+
+
+
+<!DOCTYPE html>
+<html>
+<style>
+div {
+  width:30%;  
+  display:inline-block;
+}
+</style>
+<body>
+
+<div style="background-color:#FFF4A3;">
+  <h2>London</h2>
+  <p>London is the capital city of England.</p>
+  <p>London has over 9 million inhabitants.</p>
+</div>
+
+<div style="background-color:#FFC0C7;">
+  <h2>Oslo</h2>
+  <p>Oslo is the capital city of Norway.</p>
+  <p>Oslo has over 700,000 inhabitants.</p>
+</div>
+
+<div style="background-color:#D9EEE1;">
+  <h2>Rome</h2>
+  <p>Rome is the capital city of Italy.</p>
+  <p>Rome has over 4 million inhabitants.</p>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+2. FLEX
+
+Example
+How to use flex to align div elements side by side:
+
+<style>
+.mycontainer {
+  display: flex;
+}
+.mycontainer > div {
+  width:33%;
+}
+</style>
+
+EXAMPLE OF INLINE BLOCK METHOD 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.mycontainer {
+  display: flex;
+}
+.mycontainer > div {
+  width:33%;
+}
+</style>
+</head>
+<body>
+
+<h1>Flexbox Example</h1>
+
+<p>Align three DIV elements side by side.</p>
+
+<div class="mycontainer">
+
+  <div style="background-color:#FFF4A3;">
+    <h2>London</h2>
+    <p>London is the capital city of England.</p>
+    <p>London has over 9 million inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#FFC0C7;">
+    <h2>Oslo</h2>
+    <p>Oslo is the capital city of Norway.</p>
+    <p>Oslo has over 700,000 inhabitants.</p>
+  </div>
+  
+  <div style="background-color:#D9EEE1;">
+    <h2>Rome</h2>
+    <p>Rome is the capital city of Italy.</p>
+    <p>Rome has over 4 million inhabitants.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+                                  HTML FORM 
+An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+
+
+
+
+The <form> Element
+The HTML <form> element is used to create an HTML form for user input:
+
+<form>
+.
+form elements
+.
+</form>
+The <form> element is a container for different types of input elements, such as: text fields, checkboxes, radio buttons, submit buttons, etc.
+
+All the different form elements are covered in this chapter: HTML Form Elements.
+
+The <input> Element
+The HTML <input> element is the most used form element.
+
+An <input> element can be displayed in many ways, depending on the type attribute.
+
+Here are some examples:
+
+Type	Description
+<input type="text">	Displays a single-line text input field
+<input type="radio">	Displays a radio button (for selecting one of many choices)
+<input type="checkbox">	Displays a checkbox (for selecting zero or more of many choices)
+<input type="submit">	Displays a submit button (for submitting the form)
+<input type="button">	Displays a clickable button
+
+
+                                INPUT ELEMENTS
+
+A form with input fields for text:
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
+
+
+                      The <label> Element
+Notice the use of the <label> element in the example above.
+
+The <label> tag defines a label for many form elements.
+
+The <label> element is useful for screen-reader users, because the screen-reader will read out loud the label when the user focuses on the input element.
+
+
+                    Radio Buttons
+The <input type="radio"> defines a radio button.
+
+Radio buttons let a user select ONE of a limited number of choices.
+
+Example
+
+
+Example
+A form with radio buttons:
+
+<p>Choose your favorite Web language:</p>
+
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="html">HTML</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">CSS</label><br>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">JavaScript</label>
+</form>
+
+
+                                Checkboxes
+The <input type="checkbox"> defines a checkbox.
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.
+
+
+<form>
+  <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+  <label for="vehicle1"> I have a bike</label><br>
+  <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+  <label for="vehicle2"> I have a car</label><br>
+  <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+  <label for="vehicle3"> I have a boat</label>
+</form>
+
+
+
+                                The Submit Button
+The <input type="submit"> defines a button for submitting the form data to a form-handler.
+
+The form-handler is typically a file on the server with a script for processing input data.
+
+The form-handler is specified in the form's action attribute.
+
+Example
+A form with a submit button:
+
+<form action="/action_page.php">
+
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Firstname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Lastname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+
+The Name Attribute for <input>
+Notice that each input field must have a name attribute to be submitted.
+
+If the name attribute is omitted, the value of the input field will not be sent at all.
+
+
+
+                             The <datalist> Element
+The <datalist> element specifies a list of pre-defined options for an <input> element.
+
+Users will see a drop-down list of the pre-defined options as they input data.
+
+The list attribute of the <input> element, must refer to the id attribute of the <datalist> element.
+
+Example
+<form action="/action_page.php">
+  <input list="browsers">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+</form>
+
+
+
+
+                                      The <output> Element
+The <output> element represents the result of a calculation (like one performed by a script).
+
+Example
+Perform a calculation and show the result in an <output> element:
+
+<form action="/action_page.php"
+  oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+  0
+  <input type="range"  id="a" name="a" value="50">
+  100 +
+  <input type="number" id="b" name="b" value="50">
+  =
+  <output name="x" for="a b"></output>
+  <br><br>
+  <input type="submit">
+</form>
+
+                               Input Type Button
+<input type="button"> defines a button:
+
+Example
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+
+
+                            <!DOCTYPE html>
+<html>
+<body>
+
+<h2>Input Button</h2>
+
+<input type="button" onclick="alert('Hello World! I love python ')" value="Click Me!">
+
+</body>
+</html>
+
+
+
+                                       Input Type Color
+The <input type="color"> is used for input fields that should contain a color.
+
+Depending on browser support, a color picker can show up in the input field.
+
+Example
+<form>
+  <label for="favcolor">Select your favorite color:</label>
+  <input type="color" id="favcolor" name="favcolor">
+</form>
+
+
+
+
+                                           Input Type Date
+The <input type="date"> is used for input fields that should contain a date.
+
+Depending on browser support, a date picker can show up in the input field.
+
+Example
+<form>
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday">
+</form>
+
+
+
+
+
+                                            Input Type Datetime-local
+The <input type="datetime-local"> specifies a date and time input field, with no time zone.
+
+Depending on browser support, a date picker can show up in the input field.
+
+Example
+<form>
+  <label for="birthdaytime">Birthday (date and time):</label>
+  <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+
+</form>
+
+
+
+                                                    Input Type Email
+The <input type="email"> is used for input fields that should contain an e-mail address.
+
+Depending on browser support, the e-mail address can be automatically validated when submitted.
+
+Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Example
+<form>
+  <label for="email">Enter your email:</label>
+  <input type="email" id="email" name="email">
+</form>
+
+
+
+Input Type Image
+The <input type="image"> defines an image as a submit button.
+
+The path to the image is specified in the src attribute.
+
+Example
+<form>
+<input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+Input Type File
+The <input type="file"> defines a file-select field and a "Browse" button for file uploads.
+
+Example
+<form>
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile">
+</form>
+                                           Input Type Hidden
+The <input type="hidden"> defines a hidden input field (not visible to a user).
+
+A hidden field lets web developers include data that cannot be seen or modified by users when a form is submitted.
+
+A hidden field often stores what database record that needs to be updated when the form is submitted.
+
+Note: While the value is not displayed to the user in the page's content, it is visible (and can be edited) using any browser's developer tools or "View Source" functionality. Do not use hidden inputs as a form of security!
+
+Example
+<form>
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+</form>
+                                      Input Type Month
+The <input type="month"> allows the user to select a month and year.
+
+Depending on browser support, a date picker can show up in the input field.
+
+Example
+<form>
+  <label for="bdaymonth">Birthday (month and year):</label>
+  <input type="month" id="bdaymonth" name="bdaymonth">
+</form>
+                                            Input Type Number
+The <input type="number"> defines a numeric input field.
+
+You can also set restrictions on what numbers are accepted.
+
+The following example displays a numeric input field, where you can enter a value from 1 to 5:
+
+Example
+<form>
+  <label for="quantity">Quantity (between 1 and 5):</label>
+  <input type="number" id="quantity" name="quantity" min="1" max="5">
+</form>
+
+
+                                                     Input Type Time
+The <input type="time"> allows the user to select a time (no time zone).
+
+Depending on browser support, a time picker can show up in the input field.
+
+Example
+<form>
+  <label for="appt">Select a time:</label>
+  <input type="time" id="appt" name="appt">
+</form>
+                                                          Input Type Week
+The <input type="week"> allows the user to select a week and year.
+
+Depending on browser support, a date picker can show up in the input field.
+
+Example
+<form>
+  <label for="week">Select a week:</label>
+  <input type="week" id="week" name="week">
+</form>
+ 
+
+
+                                      What is CSS?
+Cascading Style Sheets (CSS) is used to format the layout of a webpage.
+
+With CSS, you can control the color, font, the size of text, the spacing between elements,
+how elements are positioned and laid out, what background images or background colors are to be used, different displays for different devices and screen sizes, and much more!
+
+Tip: The word cascading means that a style applied 
+
+
+External CSS
+An external style sheet is used to define the style for many HTML pages.
+
+To use an external style sheet, add a link to it in the <head> section of each HTML page:
+
+  <link rel="stylesheet" href="styles.css">
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+"styles.css":
+body {
+  background-color: powderblue;
+}
+h1 {
+  color: blue;
+}
+p {
+  color: red;
+}
+
+
+CSS Colors, Fonts and Sizes
+Here, we will demonstrate some commonly used CSS properties. You will learn more about them later.
+
+The CSS color property defines the text color to be used.
+
+The CSS font-family property defines the font to be used.
+
+The CSS font-size property defines the text size to be used.
+
+Example
+Use of CSS color, font-family and font-size properties:
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+
+
+

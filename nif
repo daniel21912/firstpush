@@ -1,0 +1,19 @@
+Python 3.13.5 (tags/v3.13.5:6cb20a2, Jun 11 2025, 16:15:46) [MSC v.1943 64 bit (AMD64)] on win32
+Enter "help" below or click "Help" above for more information.
+>>> a="daniel"
+... print("type(a)")
+... type(a)
+... "dan"+"nif"
+... 'dannif'
+... "dan"+110
+SyntaxError: multiple statements found while compiling a single statement
+>>> "dan"*5
+'dandandandandan'
+>>> "dan"*"dan"
+Traceback (most recent call last):
+  File "<pyshell#2>", line 1, in <module>
+    "dan"*"dan"
+TypeError: can't multiply sequence by non-int of type 'str'
+>>> a=int(10.754)
+>>> print("a")
+a

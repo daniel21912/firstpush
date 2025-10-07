@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to JavaScript</title>
+	<style>
+		body {
+			background-image: linear-gradient(to bottom, #33ccff, #ffffff);
+			font-family: Arial, sans-serif;
+			text-align: center;
+		}
+		#hello {
+			color: #00698f;
+			font-size: 48px;
+			margin-top: 100px;
+		}
+		#description {
+			font-size: 24px;
+			margin-top: 20px;
+		}
+	</style>
+</head>
+<body>
+	<h1 id="hello"></h1>
+	<p id="description"></p>
+	<button id="learn-more">Learn More</button>
+	<div id="more-content" style="display: none;">
+		<h2>What is JavaScript?</h2>
+		<p>JavaScript is a programming language used for client-side scripting on the web.</p>
+		<h2>Why Learn JavaScript?</h2>
+		<ul>
+			<li>Create interactive web pages</li>
+			<li>Develop dynamic user experiences</li>
+			<li>Build web applications</li>
+		</ul>
+	</div>
+
+	<script>
+		document.getElementById("hello").innerHTML = "Welcome to the World of JavaScript!";
+		document.getElementById("description").innerHTML = "A powerful programming language for the web.";
+
+		document.getElementById("learn-more").addEventListener("click", function() {
+			var moreContent = document.getElementById("more-content");
+			if (moreContent.style.display === "none") {
+				moreContent.style.display = "block";
+			} else {
+				moreContent.style.display = "none";
+			}
+		});
+	</script>
+</body>
+</html>

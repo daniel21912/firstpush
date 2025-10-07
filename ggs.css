@@ -1,0 +1,60 @@
+
+    :root {
+      --bg: #ffffff;
+      --text: #222222;
+      --primary: #007bff;
+      --card: #f5f5f5;
+    }
+    .dark {
+      --bg: #121212;
+      --text: #f1f1f1;
+      --primary: #4dabf7;
+      --card: #1e1e1e;
+    }
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      transition: 0.3s;
+    }
+    header {
+      background: var(--primary);
+      padding: 15px;
+      color: #fff;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .card {
+      background: var(--card);
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    button {
+      background: var(--primary);
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .dark-btn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+    }
+  <button class="dark-btn" onclick="document.body.classList.toggle('dark')">🌙 Toggle Dark Mode</button>
+  <header>My Website</header>
+  <div class="container">
+    <div class="card">This is a placeholder card. Replace with your content.</div>
+    <div class="card">Another section. Add text, images, or anything here.</div>
+    <button>Click Me</button>
+  </div>
